@@ -63,7 +63,7 @@ public class CreateActivity extends AppCompatActivity {
                         submitBarang(new Barang(etNama.getText().toString(),
                                 etMerk.getText().toString(), etHarga.getText().toString()));
                     else
-                        Snackbar.make(findViewById(R.id.bt_submit), "Data barang tidak boleh kosong", Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(findViewById(R.id.bt_submit), "Data barang harus diisi tidak boleh kosong", Snackbar.LENGTH_LONG).show();
                                 InputMethodManager imm = (InputMethodManager)
                                         getSystemService(Context.INPUT_METHOD_SERVICE);
                     imm.hideSoftInputFromWindow(
